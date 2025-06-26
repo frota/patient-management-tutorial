@@ -34,7 +34,7 @@ services:
       POSTGRES_USER: admin_user
       POSTGRES_PASSWORD: password
     volumes:
-      - "D:\\Dev\\docker\\db_volumes\\patient-service-db:/var/lib/postgresql/data"
+      - "/home/foxtrot/development/docker/db_volumes/patient-service-db:/var/lib/postgresql/data"
     networks:
       - internal
 
@@ -113,7 +113,7 @@ services:
       POSTGRES_USER: admin_user
       POSTGRES_PASSWORD: password
     volumes:
-      - "D:\\Dev\\docker\\db_volumes\\auth-service-db:/var/lib/postgresql/data"
+      - "/home/foxtrot/development/docker/db_volumes/auth-service-db:/var/lib/postgresql/data"
     networks:
       - internal
 
